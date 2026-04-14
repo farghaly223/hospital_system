@@ -131,3 +131,6 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2026-04-06 12:17:32
+
+
+INSERT INTO patients (name, phone, medical_history) VALUES ('Moustafa Khaled', '0123456789', 'Healthy');
