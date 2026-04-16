@@ -20,9 +20,10 @@ CREATE TABLE `doctors` (
   `email` varchar(100),
   `experience_years` int,
   `consultation_fee` double DEFAULT 0.0, -- سعر الكشف
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`),			
   CONSTRAINT `fk_doctor_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+ 
 
 -- 4. جدول المرضى (Patient Module)
 CREATE TABLE `patients` (
@@ -69,3 +70,13 @@ CREATE TABLE `invoices` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 ALTER TABLE patients MODIFY COLUMN gender VARCHAR(255);
+
+	-- use hospital;
+	-- select * from doctors d ;
+	-- select * from users u ;
+	-- select * from patients p ;
+	-- INSERT INTO users (username, password, role) VALUES ('Farghly', '123', 'DOCTOR');
+	-- TRUNCATE TABLE users;
+	-- SET FOREIGN_KEY_CHECKS = 0; -- قفل حارس البوابة مؤقتاً
+    -- DELETE FROM doctors;        -- امسح اللي أنت عايزه
+    -- SET FOREIGN_KEY_CHECKS = 1;
