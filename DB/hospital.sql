@@ -33,7 +33,7 @@ CREATE TABLE `patients` (
   `phone` varchar(20) NOT NULL,
   `gender` enum('MALE','FEMALE','OTHER'),
   `date_of_birth` date,
-  `blood_group` varchar(5),
+  `blood_group` varchlar(5),
   `address` varchar(255),
   `medical_history` text,
   `emergency_contact` varchar(20), -- رقم للطوارئ

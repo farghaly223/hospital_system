@@ -33,7 +33,7 @@ public class DoctorService {
         existingDoctor.setEmail(updatedDoctor.getEmail());
         existingDoctor.setExperienceYears(updatedDoctor.getExperienceYears());
         existingDoctor.setConsultationFee(updatedDoctor.getConsultationFee());
-        existingDoctor.setUserId(updatedDoctor.getUserId());
+        existingDoctor.setId(updatedDoctor.getId());
         return doctorRepository.save(existingDoctor);
     }
 

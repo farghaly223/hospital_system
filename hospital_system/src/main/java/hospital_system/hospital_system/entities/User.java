@@ -2,7 +2,7 @@ package hospital_system.hospital_system.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class User {
 
     @Id
