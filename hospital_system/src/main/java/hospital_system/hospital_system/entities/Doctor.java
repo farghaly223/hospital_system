@@ -33,7 +33,7 @@ public class Doctor {
     private Double consultationFee = 0.0;
 
     @Column(name = "is_approved")
-    private boolean isApproved = false;
+    private Boolean isApproved = false;
 
     public Doctor() {}
 
@@ -54,6 +54,6 @@ public class Doctor {
     public void setExperienceYears(Integer experienceYears) { this.experienceYears = experienceYears; }
     public Double getConsultationFee() { return consultationFee; }
     public void setConsultationFee(Double consultationFee) { this.consultationFee = consultationFee; }
-    public boolean isApproved() { return isApproved; }
+    public Boolean isApproved() { return isApproved; }
     public void setApproved(boolean approved) { isApproved = approved; }
 }

@@ -1,0 +1,12 @@
+{
+    "username": "dr_moustafa",
+    "password": "password123",
+    "role": "DOCTOR",
+    "name": "Moustafa Khaled",
+    "specialization": "Cardiology",
+    "phone": "0123456789",
+    "email": "moustafa@hospital.com",
+    "experienceYears": 5,
+    "consultationFee": 150.0
+}
+doctor
